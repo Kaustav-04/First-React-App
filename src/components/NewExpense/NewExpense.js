@@ -5,8 +5,9 @@ import ExpenseForm from "./ExpenseForm";
 const NewExpense = (props) => {
     const getData = (ExpenseData) => {
         const NewExpenseData = {
+            id : Math.random().toString(),
             ...ExpenseData,
-            id: Math.random().toString(),
+            
         }
         // console.log(NewExpenseData);
         props.NewData(NewExpenseData);
